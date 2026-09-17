@@ -9,8 +9,7 @@ class PasswordStrength {
 
   PasswordStrength({
     required this.score,
-    required this.label,
-    required this.color,
+    
     required this.requirements,
   });
 }
@@ -20,14 +19,12 @@ class PasswordService {
     if (password.isEmpty) {
       return PasswordStrength(
         score: 0,
-        label: 'فارغ',
-        color: Colors.grey,
-        requirements: ['يرجى إدخال كلمة المرور'],
+        
       );
     }
 
     int score = 0;
-    List<String> unmetRequirements = [];
+    
 
     bool hasLength = password.length >= 8;
     bool hasUppercase = password.contains(RegExp(r'[A-Z]'));
