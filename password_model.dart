@@ -8,8 +8,7 @@ class PasswordStrength {
 
   PasswordStrength({
     required this.score,
-    required this.label,
-    required this.color,
+   
     required this.requirements,
   });
 }
