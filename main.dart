@@ -2,17 +2,13 @@ Container(
         width: double.infinity,
         height: 300,
         margin: EdgeInsets.symmetric(horizontal: 10,vertical: 17),
-       decoration: BoxDecoration(color: Colors.white,borderRadius: BorderRadius.circular(12)),
+      
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
          textDirection: TextDirection.rtl,
          children: [
-           Text("عنوان الباقة",style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
-           SizedBox(height: 30,),
-           Row(textDirection: TextDirection.rtl,
-             children: [Icon(Icons.network_wifi,color: Colors.grey,),
-               Text("1.5جيجا",style: TextStyle(fontSize: 30,color: Colors.grey)
-               ),
+         
+          
           Spacer(),
                Icon(Icons.access_alarm_outlined,color: Colors.grey,),
                Text("7ايام",style: TextStyle(fontSize: 30,color: Colors.grey),
